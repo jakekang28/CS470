@@ -10,10 +10,21 @@ The robot is run by three types of scripts. DecisionRequester, BehaviorParameter
 
 In Unity C# script we can add public components in the script to enable manipulation in the Unity Editor. All of the joints and body parts are declared as public. 
 
+
+
 Next, in the Unity editor, we drag and drop the body parts to the parameters of the script to be sensed. If all of the parameters are set, we turn on the cmd.
+
+![unity화면](https://user-images.githubusercontent.com/108389214/206897377-55363d75-ac12-417f-8dca-a0051851be8e.png)
 
 
 In the cmd, we type 
-'''c 
-py {version} mlagents-learn --force --run-id= {the name you want}
-'''
+ 
+```py {version} mlagents-learn --force --run-id= {the name you want}```
+
+Then the model will be trained for the max steps we registered. 
+
+For 500,000 steps the model file is automatically saved in the TFmodels folder. Then we drag and drop the .onnx file to the Unity Editor in the BehaviorParameter folder 'Model' section.
+
+Then click the Play button to see the behavior of the robot.
+
+
