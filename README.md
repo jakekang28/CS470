@@ -3,7 +3,8 @@
 
 Our project is about simulating quadruped robots in Unity. 
 ## Prerequisites
-Initially, in the Unity Editor we should export MLAgents Package, so that it helps the model to be trained in the Unity Editor.
+Initially, in the Unity Editor we should export MLAgents Package, so that it helps the model to be trained in the Unity Editor. <br/>
+The MLAgents installation guide : ```https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md``` <br/>
 Also, we need python version over 3.8, and less than 3.11. This is because the numpy modules' precompiled wheels are not distributed for python 3.11. 
 
 The robot is run by three types of scripts. DecisionRequester, BehaviorParameters, and the Agent. The rewards and the orientation that the robot follows is determined in the Agent file. Then the DecisionRequester decides the action depending on the result that Agent produces. The vector values of the joint strength and rotation values are saved in BehaviorParameters. 
