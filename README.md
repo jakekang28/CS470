@@ -1,5 +1,5 @@
-# CS470
-## Final Project : Contributor : 20190015 강지훈, 20190437 이경재
+# 2022.10~2022.12
+## Final Project : Contributor : 강지훈, 이경재
 
 Our project is about simulating quadruped robots in Unity. 
 ## Prerequisites
